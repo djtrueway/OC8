@@ -5,10 +5,33 @@
     "todomvc-app-css": "^2.0.1"
   },
   "devDependencies": {
+    "gulp": "^4.0.2",
+    "gulp-clean-css": "^4.3.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-concat-css": "^3.1.0",
+    "gulp-minify": "^3.1.0",
     "jasmine": "^3.5.0",
     "jasmine-core": "^2.0.0"
   },
   "scripts": {
-    "test": "jasmine"
-  }
+    "test": "jasmine",
+    "compile": "gulp default"
+  },
+  "name": "oc8",
+  "description": "Les tâches à faire dans ce projet :",
+  "version": "1.0.0",
+  "main": "gulpfile.js",
+  "directories": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/djtrueway/OC8.git"
+  },
+  "author": "peterson",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/djtrueway/OC8/issues"
+  },
+  "homepage": "https://github.com/djtrueway/OC8#readme"
 }

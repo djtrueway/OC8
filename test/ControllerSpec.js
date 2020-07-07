@@ -77,20 +77,22 @@ describe('controller', function () {
 
 		it('should show all entries without a route', function () {
 			var todo = {title: 'my todo'};
-			setUpModel([todo]);
+			var todo2 = {title: 'my todo2'};
+			setUpModel([todo, todo2]);
 
 			subject.setView('');
 
-			expect(view.render).toHaveBeenCalledWith('showEntries', [todo]);
+			expect(view.render).toHaveBeenCalledWith('showEntries', [todo, todo2]);
 		});
 
 		it('should show all entries without "all" route', function () {
 			var todo = {title: 'my todo'};
-			setUpModel([todo]);
+			var todo2 = {title: 'my todo2'};
+			setUpModel([todo, todo2]);
 
 			subject.setView('#/');
 
-			expect(view.render).toHaveBeenCalledWith('showEntries', [todo]);
+			expect(view.render).toHaveBeenCalledWith('showEntries', [todo, todo2]);
 		});
 
 		it('should show active entries', function () {

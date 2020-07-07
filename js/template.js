@@ -58,10 +58,10 @@
 	 * });
 	 */
 	Template.prototype.show = function (data) {
-		var i, l;
+		//var i, l;
 		var view = '';
-
-		for (i = 0, l = data.length; i < l; i++) {
+		const size = data.length;
+		for (let i = 0; i < size; i++) {
 			var template = this.defaultTemplate;
 			var completed = '';
 			var checked = '';
@@ -81,7 +81,7 @@
 
 		return view;
 	};
-
+	
 	/**
 	 * Displays a counter of how many to dos are left to complete
 	 *
