@@ -59,17 +59,12 @@ describe('controller', function () {
 	});
 
 	it('should show entries on start-up', function () {
-		// TODO: write test
+		// SPEC: COMPLETED, NEED REVIEW
 		setUpModel([]);
 
 		subject.setView('');
 
 		expect(view.render).toHaveBeenCalledWith('showEntries', []);
-
-		/*
-		var a = true;
-		expect(a).toEqual(true)
-		*/
 		
 	});
 
@@ -94,9 +89,9 @@ describe('controller', function () {
 
 			expect(view.render).toHaveBeenCalledWith('showEntries', [todo, todo2]);
 		});
-
+		// SPEC: COMPLETED, NEED REVIEW
 		it('should show active entries', function () {
-			// TODO: write test
+			
 			var todo = {title: 'my todo', completed: false};
 			setUpModel([todo]);
 
@@ -105,9 +100,9 @@ describe('controller', function () {
 			expect(model.read).toHaveBeenCalledWith({completed: false}, jasmine.any(Function));
 			expect(view.render).toHaveBeenCalledWith('showEntries', [todo]);
 		});
-
+			// SPEC: COMPLETED, NEED REVIEW
 		it('should show completed entries', function () {
-			// TODO: write test
+			
 			var todo = {title: 'my todo', completed: true};
 			setUpModel([todo]);
 
@@ -159,18 +154,18 @@ describe('controller', function () {
 			visible: true
 		});
 	});
-
+	// SPEC: COMPLETED, NEED REVIEW
 	it('should highlight "All" filter by default', function () {
-		// TODO: write test
+		
 		setUpModel([]);
 
 		subject.setView('');
 
 		expect(view.render).toHaveBeenCalledWith('setFilter', '');
 	});
-
+	// SPEC: COMPLETED, NEED REVIEW
 	it('should highlight "Active" filter when switching to active view', function () {
-		// TODO: write test
+		
 		setUpModel([]);
 
 		subject.setView('#/active');
@@ -179,8 +174,9 @@ describe('controller', function () {
 	});
 
 	describe('toggle all', function () {
+		// SPEC: COMPLETED, NEED REVIEW
 		it('should toggle all todos to completed', function () {
-			// TODO: write test
+			
 
 			var todos = [{
 				id: 42,
@@ -201,9 +197,9 @@ describe('controller', function () {
 			expect(model.update).toHaveBeenCalledWith(21, {completed: true}, jasmine.any(Function));
 
 		});
-
+		// SPEC: COMPLETED, NEED REVIEW
 		it('should update the view', function () {
-			// TODO: write test
+			
 			var todo = [{
 				id: 9,
 				title: 'my todo',
@@ -222,8 +218,9 @@ describe('controller', function () {
 	});
 
 	describe('new todo', function () {
+		// SPEC: COMPLETED, NEED REVIEW
 		it('should add a new todo to the model', function () {
-			// TODO: write test
+			
 			setUpModel([]);
 
 			subject.setView('');
@@ -269,8 +266,9 @@ describe('controller', function () {
 	});
 
 	describe('element removal', function () {
+		// SPEC: COMPLETED, NEED REVIEW
 		it('should remove an entry from the model', function () {
-			// TODO: write test
+			
 			var todo = {id: 4, title: 'my todo', completed: true};
 			setUpModel([todo]);
 			subject.setView('');
