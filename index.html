@@ -3,11 +3,18 @@
 	<head>
 		<meta charset="utf-8">
 		<title>VanillaJS • TodoMVC</title>
+		<!-- developper -->
+		<!---->
+			<link rel="stylesheet" href="node_modules/todomvc-common/base.css">
+			<link rel="stylesheet" href="node_modules/todomvc-app-css/index.css">
+		
+		
+		
+		<!-- production-->
 		<!--
-		<link rel="stylesheet" href="node_modules/todomvc-common/base.css">
-		<link rel="stylesheet" href="node_modules/todomvc-app-css/index.css">
+			<link rel="stylesheet" href="public/css/all.css">
 		-->
-		<link rel="stylesheet" href="public/css/all.css">
+		
 	</head>
 	<body>
 		<section class="todoapp">
@@ -42,8 +49,16 @@
 			<p>Refactored by <a href="https://github.com/cburgmer">Christoph Burgmer</a></p>
 			<p>Part of <a href="http://todomvc.com">TodoMVC</a></p>
 		</footer>
-		<script src="public/js/all.js" defer></script>
-		<!-- 
+		<!-- production-->
+		<!--
+			<script src="public/js/all.js" defer></script>
+		-->
+		
+		
+		
+
+		<!-- developper -->
+		<!-- -->
 		<script src="node_modules/todomvc-common/base.js"></script>
 		<script src="js/helpers.js"></script>
 		<script src="js/store.js"></script>
@@ -52,6 +67,5 @@
 		<script src="js/view.js"></script>
 		<script src="js/controller.js"></script>
 		<script src="js/app.js"></script>
-		-->
 	</body>
 </html>
